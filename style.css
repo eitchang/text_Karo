@@ -1,0 +1,182 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+.add{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    background: green;
+}
+
+.add{
+    color: aliceblue;
+}
+
+.add ul{
+    list-style: none;
+    display: flex;
+}
+
+.add ul li{
+    margin: 0px 7px;
+
+}
+
+.add ul li a{
+    color:aliceblue;
+}
+
+.add ul li a:hover{
+    color: #222;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    padding: 30px 60px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+nav ul {
+    list-style: none;
+}
+
+
+nav ul li a {
+    color:#707070;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin: 11px;
+    
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: green;
+    text-decoration: underline solid #FF5000 3.5px;
+    text-underline-offset: 0.5em;
+}
+
+.menu{
+    align-items: center;
+    display: flex;
+    list-style: none;
+}
+
+.menu ul li {
+    padding: 20px 15px;
+    font-size: 16px;
+}
+
+.toggle{
+    font-size: 36px;
+    display: none;
+
+   
+}
+
+.toggle ion-icon{
+    color: white;
+    border-radius: 50%;
+    border: 2px solid white;
+    font-weight: 100px;
+    
+}
+
+@media (max-width: 600px){
+
+    .logo img{
+        max-width: 50%;
+        max-height: 50%
+    }
+
+    
+    nav {
+        position:relative;
+        padding: 20px 30px;
+        display: block;
+        background: green;
+        
+    }
+
+  
+    nav li {
+        margin: 14px;
+        line-height: 1.5;
+        justify-content: center;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+        color: white;
+        text-decoration: underline solid #FF5000 3.5px;
+        text-underline-offset: 0.5em;
+    }
+    
+
+    .menu{
+        display: none;
+        margin-top: 35px;
+        height: auto;
+        padding: 20px;
+        margin: 0px;
+        justify-content: center;
+        
+    }
+
+    .menu a{
+        color: black;
+        margin: 16px;
+    }
+
+    .menu ul li{
+        padding: 5px;
+        text-align: center;
+
+    }
+    
+
+ 
+    .menu.active, .toggle{
+        display: block;
+    
+    }
+
+    .toggle{
+        top: -1.5px;
+        right: 8%;
+        justify-content: center;
+        position: absolute;
+       
+    }
+ 
+    .baner img{
+        width: 100%;
+        
+    }
+}
